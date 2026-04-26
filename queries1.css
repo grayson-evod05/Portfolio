@@ -1,0 +1,73 @@
+/* LG - SMALL LAPTOPS: 1024px - 1280px */
+
+@media (max-width : 74rem ) {
+    /* 1180px / (16px/rem) = 73.75rem */
+    /* 74rem x (16px/rem) = 1184px */
+    html{
+        /* (8px / 16px) x 100% = 56.25% */
+        font-size: 50%;
+    }
+    .main-container {
+        height: calc(80vh - var(--nav-height));
+    }
+}
+
+/* MD - TABLETS: 768px - 1024px */
+
+@media (max-width : 54rem) {
+    /* 850px / (16px/rem) = 54rem */
+    /* 54rem x  (16px/rem) = 864px */
+    html{
+        /* (7px / 16px)  x 100% = 43.75% */
+        font-size: 43.75%;
+    }
+    .main-container {
+        height: calc(70vh - var(--nav-height));
+    }
+}
+
+/* SM - PHONE LANDSCAPE: 576px - 768px */
+
+@media (max-width : 47rem) {
+    /* 740px / (16px/rem) = 47rem */
+    /* 47rem x (16px/rem) =752px */
+    html{
+        /* (6px /16px) x 100% = 37.5% */
+        font-size: 37.5%;
+    }
+    .main-container {
+        height: calc(60vh - var(--nav-height));
+    }
+}
+
+@media (max-width : 42rem) {
+    /* 660px / (16px/rem) = 42rem */
+    /* 42rem x (16px/rem) =672px */
+    html{
+        /* (5px /16px) x 100% = 31.25% */
+        font-size: 31.25%;
+    }
+    .main-container {
+        height: calc(50vh - var(--nav-height));
+    }
+}
+
+/* XS - PHONE PORTRAIT: 0 - 576px */
+
+@media (max-width : 34rem) {
+    /* 536px / (16px/rem) = 34rem */
+    /* 34rem x (16px/rem) =544px */
+    html{
+        /* (5px /16px) x 100% = 31.25% */
+        font-size: 37.5%;
+    }
+    .main-container{
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+        height: auto;
+        margin-bottom: 6rem;
+    }
+    .second-section {
+    justify-self: center;
+    }
+}
